@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>First Blog</title>
-    </head>
-    <body>
-        <header>
-            <h1>First Blog</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>First Blog</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>First Blog</h1>
         <nav>
             <ul>
                 <!-- update below with the suggestions -->
@@ -16,12 +19,48 @@
             </ul>
         </nav>
     </header>
-        <main> 
+    <main></main>
+    <section class="starter">
+        <h2>My First Blog</h2>
+    </section>
+    <section>
+        <h3>What's on your mind</h3>
+        <form id="Mind">
+            <form>
+                <ul>
+                    <li>
+                        <label class="text-right" for="username">Username:</label>
+                        <input type="text" id="username" name="user-name">
+                    </li>
+                    <li>
+                        <label class="text-right" for="Title">Title:</label>
+                        <input type="text" id="title" name="user-title">
+                    </li>
+                    <li>
+                        <label for="content">Content</label>
+                        <textarea id="content" name="content" class="xlarge"></textarea>
+                    </li>
+                </ul>
+            </form>
+    </section>
+    <section>
+        <form class="blog"
+        <ul>
+            <li>
+                <label for="Blog">Entry 1</label>
+                <input type="text" id="entry1" name="entry-1" 
+            </li>
+            <li>title 2</li>
+            <li>title 3</li>
+            <li>title 4</li>
+            <li>This must be connected to the content li from first section</li>
+        </ul>
+    </section>
+    </main>
+    <script src="./Assets/script.js"></script>
+</body>
+<footer>
+    <h4>&copy SC learning</h4>
+</footer>
 
-        </main>
-        <script src="./Assets/script.js"></script>
-    </body>
-    <footer>
-        <h4>&copy SC learning</h4>
-    </footer>
 </html>
