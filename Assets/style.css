@@ -15,4 +15,12 @@ nav ul{
     min-width: 100px;
     margin: 20px;
 } 
+.starter {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: paleturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
