@@ -1,6 +1,10 @@
 const lightToggle = document.getElementById('lightToggle');
 const container = document.querySelector('body');
 
+document.getElementById("back").addEventListener("click", function() {
+    window.location.href = "index.html"; // Navigate to the landing page (index.html)
+});
+
 let mode ='light';
 
 lightToggle.addEventListener('click', function () {
