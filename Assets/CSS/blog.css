@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -11,4 +16,71 @@ nav ul{
     list-style: none;
     min-width: 100px;
     margin: 20px;
+    color: yellow;
+    font-size: 30px;
 } 
+
+/* Light Mode */
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+.light li a {
+    color: black;
+}
+
+.light li a:hover {
+    background-color: black;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.dark li a {
+    color: white;
+}
+
+.dark li a:hover {
+    background-color: #111;
+}
+
+
+
+/* Set the form to take the whole width of the page */
+.blog {
+    width: 100%;
+    max-width: none; /* Ensure it doesn't adhere to any max-width constraints */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Optional: Add some padding for better spacing */
+}
+
+/* Style for list items */
+.blog ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for labels */
+.blog label {
+    display: inline-block;
+    width: 100px; /* Adjust as needed */
+}
+
+/* Style for inputs */
+.blog input[type="text"] {
+    width: 1000px; /* Adjust for label width */
+}
+.blog li {
+    margin-bottom: 20px; /* Add margin between entries */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
