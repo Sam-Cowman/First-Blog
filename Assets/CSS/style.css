@@ -5,8 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 30px;
     text-align: center;
+    background-color: rgb(145, 221, 183);
 }
 nav {
     display:flex;
@@ -25,31 +26,54 @@ nav {
     width: 200px;
     height: 700px;
     border-radius: 50%;
-    background: paleturquoise;
+    background: rgb(145, 221, 183);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 10px;
+   margin-top: 50px;
 }
 .starter,
 .form-section {
-    width: 48%; /* Adjust width as needed */
-}
-.right-centered {
-  padding-left:10px;  
+    width: 50%; /* Adjust width as needed */
 }
 
-.form-section {
-    margin-left: 20px; /* Add space between sections */
+form ul {
+    list-style: none;
+    padding-left: 200px;
 }
 
-.light-mode {
-    background-color: #fff; /* White background color */
-    color: #333; /* Dark text color */
+/* Light Mode */
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
 }
 
-/* Dark mode styles */
-.dark-mode {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
+.light li a {
+    color: black;
+}
+
+.light li a:hover {
+    background-color: black;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.dark li a {
+    color: white;
+}
+
+.dark li a:hover {
+    background-color: #111;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
 }
