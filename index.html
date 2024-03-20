@@ -5,59 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>First Blog</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
 
 <body>
     <header>
         <h1>First Blog</h1>
-        <nav>
-            <ul>
-                <!-- update below with the suggestions -->
-                <li>Back button</li>
-                <li>Light and dark toggle</li>
-            </ul>
-        </nav>
+        <nav id="lightToggle">&#9728;</nav>
     </header>
-    <main></main>
+    <main class="container">
     <section class="starter">
         <h2>My First Blog</h2>
     </section>
     <section>
         <h3>What's on your mind</h3>
-        <form id="Mind">
-            <form>
+        <div class="right-centered">
+        <form id="mindForm">
                 <ul>
                     <li>
                         <label class="text-right" for="username">Username:</label>
                         <input type="text" id="username" name="user-name">
                     </li>
                     <li>
-                        <label class="text-right" for="Title">Title:</label>
-                        <input type="text" id="title" name="user-title">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title">
                     </li>
                     <li>
-                        <label for="content">Content</label>
-                        <textarea id="content" name="content" class="xlarge"></textarea>
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content"></textarea>
                     </li>
                 </ul>
-            </form>
-    </section>
-    <section>
-        <form class="blog"
-        <ul>
-            <li>
-                <label for="Blog">Entry 1</label>
-                <input type="text" id="entry1" name="entry-1" 
-            </li>
-            <li>title 2</li>
-            <li>title 3</li>
-            <li>title 4</li>
-            <li>This must be connected to the content li from first section</li>
-        </ul>
+                <button type="submit" id="Submit">Submit</button>
+        </form>
+        </div>
     </section>
     </main>
-    <script src="./Assets/script.js"></script>
+    <script src="./Assets/JS/form.js"></script>
 </body>
 <footer>
     <h4>&copy SC learning</h4>
