@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Wait for the document to be fully loaded before executing the script
 
+const lightToggle = document.getElementById('lightToggle');
+const container = document.querySelector('body');
+
+document.addEventListener('DOMContentLoaded', function() {
+   
     document.getElementById('mindForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
         // Retrieve the values from the form fields
         var title = document.getElementById('title').value;
@@ -16,28 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const lightToggle = document.getElementById('lightToggle');
+let mode ='light';
 
-lightToggle.addEventListener('click', function() {
-    document.body.classList.toggle('light-mode');
-
-    // You can also toggle the sun emoji to represent the current mode
-    if (document.body.classList.contains('light-mode')) {
-        lightToggle.textContent = '&#9728;'; // Sun emoji
+lightToggle.addEventListener('click', function () {
+    // Toggle between light and dark mode 
+    if (mode === 'light') {
+        mode = 'dark';
+        container.classList.remove('light');
+        container.classList.add('dark');
     } else {
-        lightToggle.textContent = '&#127770;'; // Moon emoji or any other appropriate icon
+        mode = 'light';
+        container.classList.remove('dark');
+        container.classList.add('light');
     }
 });
-
-themeSwitcher.addEventListener('click', function () {
-    // If mode is dark, apply light background
-    if (mode === 'dark') {
-      mode = 'light';
-      container.setAttribute('class', 'light');
-    }
-    // If mode is light, apply dark background
-    else {
-      mode = 'dark';
-      container.setAttribute('class', 'dark');
-    }
-  });
