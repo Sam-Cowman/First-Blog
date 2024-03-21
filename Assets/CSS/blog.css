@@ -50,34 +50,28 @@ nav ul{
     background-color: #111;
 }
 
-
-
-/* Set the form to take the whole width of the page */
-.blog {
-    width: 100%;
-    max-width: none; /* Ensure it doesn't adhere to any max-width constraints */
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 20px; /* Optional: Add some padding for better spacing */
-}
-
-/* Style for list items */
 .blog ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Style for labels */
-.blog label {
-    display: inline-block;
-    width: 100px; /* Adjust as needed */
+.blog li {
+    margin-bottom: 20px;
+    position: relative; /* Ensure list items are positioned relatively */
 }
 
-/* Style for inputs */
-.blog input[type="text"] {
-    width: 1000px; /* Adjust for label width */
+.blog label {
+    display: block;
+    margin-bottom: 5px;
+    background-color: white; /* Add background color to make label text visible */
+    color: black;
 }
-.blog li {
-    margin-bottom: 20px; /* Add margin between entries */
+
+.blog textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 25px; /* Adjust this value to ensure the text doesn't overlap with the label */
 }
 
 footer {
