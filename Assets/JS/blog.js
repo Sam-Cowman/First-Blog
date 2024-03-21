@@ -19,3 +19,7 @@ lightToggle.addEventListener('click', function () {
         container.classList.add('light');
     }
 });
+
+// Need to someone connect this to the landing page 
+const entry4 = document.getElementById('entry4')
+console.log(entry4)
