@@ -1,5 +1,6 @@
 const lightToggle = document.getElementById('lightToggle');
-    const container = document.querySelector('body');
+const container = document.querySelector('body');
+const form = document.getElementById('mindForm');
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -8,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         // Retrieve the values from the form fields
-        const username = document.getElementById('username').value;
-        const title = document.getElementById('title').value;
-        const content = document.getElementById('content').value;
+        var username = document.getElementById('username').value;
+        var title = document.getElementById('title').value;
+        var content = document.getElementById('content').value;
 
         // Check if any of the fields are empty
         if (username === '' || title === '' || content === '') {
@@ -19,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Store form data in localStorage
-        localStorage.setItem('username', username);
-        localStorage.setItem('title', title);
-        localStorage.setItem('content', content);
+        localStorage.setItem('textvalue', username);
+        localStorage.setItem('textvalue', title);
+        localStorage.setItem('textvalue', content);
 
         // Redirect the user to the new page
         window.location.href = 'blog.html';
