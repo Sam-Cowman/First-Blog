@@ -22,10 +22,10 @@ nav:hover {
 }
 .container {
     display: flex;
-    justify-content: space-between; /* Add space between sections */
+    justify-content: space-around; /* Add space between sections */
 }
 .starter {
-    width: 200px;
+    width: 50%;
     height: 700px;
     border-radius: 50%;
     background: rgb(145, 221, 183);
@@ -38,11 +38,18 @@ nav:hover {
 .starter,
 .form-section {
     width: 50%; /* Adjust width as needed */
+    padding: 20px;
+
 }
 
 form ul {
     list-style: none;
-    padding-left: 200px;
+    width: 100%;
+}
+form ul li {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 
