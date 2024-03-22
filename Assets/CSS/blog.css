@@ -10,14 +10,16 @@ header {
     padding: 60px;
     text-align: center;
 }
+nav:hover {
+    cursor:pointer;
+}
 nav ul{
     display:flex;
     justify-content: space-between;
     list-style: none;
     min-width: 100px;
     margin: 20px;
-    color: yellow;
-    font-size: 30px;
+    font-size: 25px;
 } 
 
 /* Light Mode */
@@ -37,7 +39,7 @@ nav ul{
 
 /* Dark Mode */
 .dark {
-    background-color: black;
+    background-color: rgb(43, 39, 75);
     height: 100vh;
     color: white;
 }
@@ -47,9 +49,10 @@ nav ul{
 }
 
 .dark li a:hover {
-    background-color: #111;
+    background-color: rgb(43, 39, 75);
 }
 
+/* Blog Form Elements */
 .blog ul {
     list-style-type: none;
     padding: 0;

@@ -15,9 +15,11 @@ nav {
     list-style: none;
     min-width: 100px;
     margin: 20px;
-    color: yellow;
-    font-size: 30px;
+    font-size: 25px;
 } 
+nav:hover {
+    cursor:pointer;
+}
 .container {
     display: flex;
     justify-content: space-between; /* Add space between sections */
@@ -43,6 +45,8 @@ form ul {
     padding-left: 200px;
 }
 
+
+
 /* Light Mode */
 .light {
     background-color: white;
@@ -60,7 +64,7 @@ form ul {
 
 /* Dark Mode */
 .dark {
-    background-color: black;
+    background-color: rgb(43, 39, 75);
     height: 100vh;
     color: white;
 }
@@ -70,10 +74,21 @@ form ul {
 }
 
 .dark li a:hover {
-    background-color: #111;
+    background-color: rgb(43, 39, 75);
 }
 
 footer {
     text-align: center;
     margin-top: 50px;
 }
+
+/* @media screen and (max-width: 992px) {
+    .starter {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .starter {
+      width: 100%;
+    }
+  } */
