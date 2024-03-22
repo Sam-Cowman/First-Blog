@@ -1,7 +1,7 @@
 const lightToggle = document.getElementById('lightToggle');
 const container = document.querySelector('body');
 const form = document.getElementById('mindForm');
-
+const formHistory = JSON.parse(localStorage.getItem('formHistory')) || []
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to handle form submission
@@ -18,11 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please complete all fields.');
             return; // Exit the function to prevent form submission
         }
+        const formEntry = {
+            username,
+            title,
+            content,
+        }
+        console.log(formEntry)
+        formHistory.push(formEntry)
+
 
         // Store form data in localStorage
-        localStorage.setItem('textvalue', username);
-        localStorage.setItem('textvalue', title);
-        localStorage.setItem('textvalue', content);
+        localStorage.setItem('formHistory', JSON.stringify(formHistory));
+        
 
         // Redirect the user to the new page
         window.location.href = 'blog.html';
