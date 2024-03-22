@@ -61,6 +61,12 @@ nav ul{
 .blog li {
     margin-bottom: 20px;
     position: relative; /* Ensure list items are positioned relatively */
+    padding: 20px;
+}
+.entries div{
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .blog label {
