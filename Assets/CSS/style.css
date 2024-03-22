@@ -26,7 +26,7 @@ nav:hover {
 }
 .starter {
     width: 50%;
-    height: 700px;
+    height:700px ;
     border-radius: 50%;
     background: rgb(145, 221, 183);
     display: flex;
@@ -49,7 +49,7 @@ form ul {
 form ul li {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -87,6 +87,10 @@ form ul li {
 footer {
     text-align: center;
     margin-top: 50px;
+}
+
+footer li {
+    list-style: none;
 }
 
 /* @media screen and (max-width: 992px) {
