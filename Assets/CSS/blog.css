@@ -104,3 +104,6 @@ footer {
 footer li {
     list-style: none;
 }
+footer li:hover {
+    background-color: white;
+}
