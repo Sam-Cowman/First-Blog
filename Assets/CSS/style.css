@@ -1,58 +1,73 @@
-*{
+* {
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+:root {
+    --green: rgb(145, 221, 183);
+    --blue: rgb(43, 39, 75);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
     text-align: center;
-    background-color: rgb(145, 221, 183);
+    border: 2px solid var(--green);
 }
+
 nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     list-style: none;
     min-width: 100px;
     margin: 20px;
     font-size: 25px;
-} 
-nav:hover {
-    cursor:pointer;
 }
+
+nav:hover {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
-    justify-content: space-around; /* Add space between sections */
+    justify-content: space-around;
+    /* Add space between sections */
 }
+
 .starter {
-    width: 50%;
-    height:700px ;
+    width: 30vw;
+    height: 30vw;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 50%;
-    background: rgb(145, 221, 183);
+    background: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 10px;
-   margin-top: 50px;
+    margin-top: 50px;
 }
+
 .starter,
 .form-section {
-    width: 50%; /* Adjust width as needed */
+    width: 50%;
+    /* Adjust width as needed */
     padding: 20px;
-
+   
 }
 
 form ul {
     list-style: none;
     width: 100%;
 }
+
 form ul li {
     display: flex;
     flex-direction: column;
 
 }
-
-
 
 /* Light Mode */
 .light {
@@ -71,7 +86,7 @@ form ul li {
 
 /* Dark Mode */
 .dark {
-    background-color: rgb(43, 39, 75);
+    background-color: var(--blue);
     height: 100vh;
     color: white;
 }
@@ -81,7 +96,7 @@ form ul li {
 }
 
 .dark li a:hover {
-    background-color: rgb(43, 39, 75);
+    background-color: var(--blue);
 }
 
 footer {
@@ -93,13 +108,3 @@ footer li {
     list-style: none;
 }
 
-/* @media screen and (max-width: 992px) {
-    .starter {
-        width: 50%;
-    }
-}
-@media screen and (max-width: 768px) {
-    .starter {
-      width: 100%;
-    }
-  } */
